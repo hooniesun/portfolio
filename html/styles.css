@@ -1,0 +1,69 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.body-item1 {
+    grid-area: header;
+}
+
+.body-item2 {
+    grid-area: main;
+}
+
+.body-item3 {
+    grid-area: footer;
+}
+
+.body-grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer'
+}
+
+.main-item1 {
+    grid-area: myBio;    
+}
+
+.main-item1 h1 {
+    text-align: center;
+}
+
+.main-item2 {
+    grid-area: koreanBio-left;
+}
+
+.main-item3 {
+    grid-area: hobbies-right;
+    text-align: right;
+}
+
+.main-item4 {
+    grid-area: java;    
+}
+
+.main-item5 {
+    grid-area: links;    
+}
+
+table {
+
+    box-align: right;
+    margin: 0px 0px 0px auto;
+    border: 2px solid red;
+}
+
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+    'myBio myBio myBio myBio myBio myBio'
+    'koreanBio-left koreanBio-left koreanBio-left koreanBio-left koreanBio-right koreanBio-right'
+    'hobbies-left hobbies-left hobbies-right hobbies-right hobbies-right hobbies-right'
+    'java java java links links links';
+    grid-row-gap: 50px;
+    
+}
+
